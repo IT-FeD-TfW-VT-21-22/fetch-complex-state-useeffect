@@ -1,13 +1,95 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem;
+}
+
+.center-text {
+  margin-bottom: 1rem;
+}
+
+.account-form {
+  background: whitesmoke;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem 4rem;
+  border-radius: 0.25rem;
+  font-size: 18px;
+}
+
+.form-control {
+  margin: 0.5rem 0;
+}
+
+.form-label {
+  border-bottom: 2px solid black;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-field {
+  margin-top: 10px;
+}
+
+.form-btn {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 5px 25px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #77a0a0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  -webkit-box-shadow: -4px 4px 6px -1px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -4px 4px 6px -1px rgba(0, 0, 0, 0.51);
+  box-shadow: -4px 4px 6px -1px rgba(0, 0, 0, 0.51);
+  transition: 0.25s;
+}
+
+.form-btn:hover,
+.form-btn::after,
+.form-btn::before {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.31);
+}
+
+.form-btn::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.form-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.31);
+}
+
+.nametag {
+  margin: 1rem;
+  width: 14rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border: 3px solid black;
+  -webkit-box-shadow: -2px 2px 8px -1px #000000;
+  box-shadow: -2px 2px 8px -1px #000000;
 }
